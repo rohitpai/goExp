@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"strconv"
 )
 
 func main() {
-	fmt.Println("My favorite number is", rand.Intn(10))
+	i := 42
+	fmt.Printf("%T\n", i)
+	j := strconv.Itoa(i)
+	fmt.Printf("%v, %T", j, j)
 }
